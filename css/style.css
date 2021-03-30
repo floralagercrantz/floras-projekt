@@ -1,14 +1,14 @@
 
-
+/*flexbox för nav-baren*/
 .flex-container {
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: end;
 }
-
+/*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen*/
 nav {
-
+transition: 0.4s;
 }
 h1 {
 
@@ -25,14 +25,22 @@ button {
   transition-duration: 1s;
 }
 
-
+/*beskriver hur knappen ser ut, färg o form*/
 .btn1 {
-  background-color: inherit;
-color: white;
+  background-color: rgb(185, 235, 142, 10%);
+color:white;
 border: 3px solid rgb(194, 255, 126);
+border-radius: 90%;
+box-shadow: 4px 4px rgb(250, 4, 166);
+
 }
+/*ändrar på knappen vid hover*/
 .btn1:hover {
   background-color: white;
   color: Black;
   border: 3px solid rgb(194, 255, 126);
+}
+/* lägger till pil-icon efter text*/
+button:after {
+  content: ' \21D3';
 }
