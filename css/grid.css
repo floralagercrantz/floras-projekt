@@ -4,3 +4,14 @@
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(10, auto);
 }
+
+
+header{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+nav{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}

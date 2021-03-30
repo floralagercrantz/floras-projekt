@@ -1,1 +1,38 @@
 
+
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: end;
+}
+
+nav {
+
+}
+h1 {
+
+}
+
+button {
+  border: none;
+  color: inherit;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  transition-duration: 1s;
+}
+
+
+.btn1 {
+  background-color: inherit;
+color: white;
+border: 3px solid rgb(194, 255, 126);
+}
+.btn1:hover {
+  background-color: white;
+  color: Black;
+  border: 3px solid rgb(194, 255, 126);
+}
