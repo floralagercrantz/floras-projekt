@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 /*flexbox för nav-baren*/
 .flexbox {
   display:flex;
@@ -16,6 +20,11 @@ height: 100px;
 }
 h1 {
 
+}
+background-img1{
+  width: 100%;
+  height:auto;
+  background-size: cover;
 }
 
 button {
