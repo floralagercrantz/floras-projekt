@@ -39,18 +39,18 @@ button {
 
 /*beskriver hur knappen ser ut, färg o form*/
 .btn1 {
-  background-color: rgb(185, 235, 142, 10%);
+  background-color: inherit;
 color:rgb(185, 235, 142, 10%);
-border: 3px solid rgb(194, 255, 126);
+border: 3px solid rgba(219, 228, 207, 0.86);
 border-radius: 90%;
 /*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt...
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
 /*ändrar på knappen vid hover*/
 .btn1:hover {
-  background-color: white;
+  background-color: rgba(165, 187, 145, 0.52);
   color: Black;
-  border: 3px solid rgb(194, 255, 126);
+  border: none;
 }
 /* lägger till pil-icon efter text*/
 button:after {
