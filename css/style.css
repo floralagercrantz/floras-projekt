@@ -19,25 +19,38 @@ background-color: rgb(107, 134, 80, 15%);
 height: 100px;
 z-index: 2;
 font-family: courier ;
+ /*visibility: hidden; aktivera detta om hover-funktionen nedan funkar*/
 }
+/* ev nav som döljs o visas närm an hoverar över den, venne om det kommer funka, funkade inte nu iaf, kanske om min bakgrundsbild vill fixa sig..
+nav: hover {
+  visibility: visible;
+  transition: 0.4s;
+  background-color: rgb(107, 134, 80, 15%);
+  height: 100px;
+  z-index: 2;
+  font-family: courier ;
+
+}*/
 
 h1 {
 color:black;
-z-index: 100;
-
+z-index: 3;
+position: relative;
 }
 
 h2 {
-
+  font-family: courier,serif;
+  text-align: center;
 }
 
 article p {
   text-align: center;
-  font-family: courier, monospace;
+  font-family: courier, serif;
 }
 .background-img1{
 width: 100%;
 z-index: 1;
+position: relative;
 
 }
 
@@ -47,7 +60,7 @@ button {
   padding: 20px;
   text-align: center;
   display: inline-block;
-  font-size: 23px;
+  font-size: 60px;
   margin: 25px;
   transition-duration: 1s;
   padding: 10px;
@@ -55,8 +68,12 @@ button {
 
 figcaption {
   color: rgb(214, 235, 162);
-  background-image: linear-gradient(to right, rgb(66, 75, 55, 0),rgb(66, 75, 55, 0.7));
-  font-size: 2em;
+  background-image: linear-gradient(to right, rgb(66, 75, 55, 0.8),rgb(66, 75, 55, 0));
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+
 }
 /*beskriver hur knappen ser ut, färg o form*/
 .btn1 {
@@ -64,6 +81,10 @@ figcaption {
 color:rgb(185, 235, 142, 10%);
 border: 3px solid rgba(219, 228, 207, 0.66);
 border-radius: 90%;
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  padding: 3px;
 /*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt...
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
@@ -76,4 +97,24 @@ box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 /* lägger till pil-icon efter text*/
 button:after {
   content: ' \21D3';
+}
+
+aside {
+  overflow: scroll;
+  max-height: 500px;
+  text-align: center;
+}
+
+
+
+footer {
+  background-color: rgb(214, 236, 192, 0.3);
+  font-family: courier, serif;
+}
+
+
+
+
+@media only screen and (max-width: 200px){
+
 }

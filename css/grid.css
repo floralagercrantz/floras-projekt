@@ -24,12 +24,12 @@ h1 {
 }
 
 h2 {
-  grid-column: 4/span 3;
+  grid-column: 3/6;
   grid-row: 6/7;
   justify-content: center;
 }
 .btn1 {
-  grid-column: 5/6;
+  grid-column: 4/7;
   grid-row: 4/5;
 }
 .background-img1{
@@ -40,20 +40,23 @@ h2 {
 }
 
 figcaption {
-  grid-column: 2/3;
-  grid-row: 4/5;
+  grid-column: 1/4;
+  grid-row: 3/6;
   /* testade justify-self för då sa olivia att de borde gå att se figcaption över min bagrundsbild, verkar inte funka tho, undrar vad jag gjort fel*/
-  justify-self:center;
+  justify-self:left;
   align-self:center;
 }
 
 article {
-  grid-column: 2/8;
+  grid-column: 2/7;
   grid-row: 7/8;
 }
 
 
-
+aside {
+  grid-column: 8/10;
+  grid-row: 6/8;
+}
 
 
 
