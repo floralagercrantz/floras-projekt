@@ -15,15 +15,30 @@
 /*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen*/
 nav {
 transition: 0.4s;
-background-color: rgb(0, 0, 0, 15%);
+background-color: rgb(107, 134, 80, 15%);
 height: 100px;
+z-index: 2;
+font-family: courier ;
 }
+
 h1 {
+color:black;
+z-index: 100;
 
 }
-background-img1{
-  width: 100%;
-  background-size: cover;
+
+h2 {
+
+}
+
+article p {
+  text-align: center;
+  font-family: courier, monospace;
+}
+.background-img1{
+width: 100%;
+z-index: 1;
+
 }
 
 button {
@@ -33,22 +48,28 @@ button {
   text-align: center;
   display: inline-block;
   font-size: 23px;
-  margin: 5px;
+  margin: 25px;
   transition-duration: 1s;
+  padding: 10px;
 }
 
+figcaption {
+  color: rgb(214, 235, 162);
+  background-image: linear-gradient(to right, rgb(66, 75, 55, 0),rgb(66, 75, 55, 0.7));
+  font-size: 2em;
+}
 /*beskriver hur knappen ser ut, färg o form*/
 .btn1 {
   background-color: inherit;
 color:rgb(185, 235, 142, 10%);
-border: 3px solid rgba(219, 228, 207, 0.86);
+border: 3px solid rgba(219, 228, 207, 0.66);
 border-radius: 90%;
 /*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt...
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
 /*ändrar på knappen vid hover*/
 .btn1:hover {
-  background-color: rgba(165, 187, 145, 0.52);
+  background-color: rgba(165, 187, 145, 0.42);
   color: Black;
   border: none;
 }
