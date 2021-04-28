@@ -1,9 +1,9 @@
 
 * {
   box-sizing: border-box;
-}
+}/* styling för allt på sidan*/
 
-/*flexbox för nav-baren*/
+/*flexbox för nav-baren, fancy*/
 .flexbox {
   display:flex;
   flex-direction: row;
@@ -14,47 +14,64 @@
 }
 /*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen*/
 nav {
-transition: 0.4s;
+transition: top 1s;
 background-color: rgb(107, 134, 80, 15%);
 height: 100px;
 z-index: 2;
 font-family: courier ;
- /*visibility: hidden; aktivera detta om hover-funktionen nedan funkar*/
+
 }
-/* ev nav som döljs o visas närm an hoverar över den, venne om det kommer funka, funkade inte nu iaf, kanske om min bakgrundsbild vill fixa sig..
-nav: hover {
-  visibility: visible;
-  transition: 0.4s;
-  background-color: rgb(107, 134, 80, 15%);
-  height: 100px;
-  z-index: 2;
-  font-family: courier ;
+/* */
+nav a {
+  color: rgb(53, 71, 31);
+  font-weight: bold;
+  padding: 40.5px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 20%;
+  text-align: center;
+}
 
-}*/
+nav a:hover {/*vid hover på items i menyn */
+  background-color:rgb(246, 245, 237);
+  color: black;
+}
 
-h1 {
+h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
 color:black;
 z-index: 3;
 position: relative;
+font-family: courier,serif;
 }
 
-h2 {
+h2 { /* Om sidan*/
   font-family: courier,serif;
   text-align: center;
 }
 
-article p {
+h3 {
+
+}
+
+h4 {/*FAQ*/
+  font-family: courier,serif;
+  text-align: center;
+
+}
+
+article p {/* stylar texten under h2*/
   text-align: center;
   font-family: courier, serif;
 }
-.background-img1{
+
+.background-img1{/* detta var jobbigt o fixa, rör ej lol */
 width: 100%;
 z-index: 1;
 position: relative;
 
 }
 
-button {
+button {/* stylar button och btn1 separat för ksk ska ha en till knapp, vem vet*/
   border: none;
   color: inherit;
   padding: 20px;
@@ -66,13 +83,14 @@ button {
   padding: 10px;
 }
 
-figcaption {
+figcaption {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
   color: rgb(214, 235, 162);
   background-image: linear-gradient(to right, rgb(66, 75, 55, 0.8),rgb(66, 75, 55, 0));
   font-size: 30px;
   position: relative;
   z-index: 2;
   padding: 50px;
+  font-family: courier, serif;
 
 }
 /*beskriver hur knappen ser ut, färg o form*/
@@ -83,38 +101,44 @@ border: 3px solid rgba(219, 228, 207, 0.66);
 border-radius: 90%;
   position: relative;
   z-index: 2;
-  height: 60px;
+  height: 65px;
   padding: 3px;
-/*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt...
+/*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt... nepp absolut inte,har 1000 saker o göra
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
-/*ändrar på knappen vid hover*/
+/*ändrar på knappen vid hover, wow*/
 .btn1:hover {
   background-color: rgba(165, 187, 145, 0.42);
   color: Black;
   border: none;
 }
-/* lägger till pil-icon efter text*/
+
+/* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
 button:after {
   content: ' \21D3';
 }
 
-aside {
+aside { /* om mig texten, gärna på sidan som js popout men får se hur det blir*/
   overflow: scroll;
   max-height: 500px;
   text-align: center;
+  font-family: courier, serif;
+  border: thick dotted black;
+  margin-right: 20px;
+
 }
 
-
-
-footer {
+footer {/*ja säger väl sig självt, en footer*/
   background-color: rgb(214, 236, 192, 0.3);
   font-family: courier, serif;
+
 }
 
 
 
-
-@media only screen and (max-width: 200px){
-
+@media only screen and (max-width: 800px){/*media query för välkommen-bannern, venne hur mkt pixlar en mobilskärm är, med detta behövde ändå fixas så kör det separat. */
+  figcaption {
+    font-size: 15px;
+    padding: 25px;
+  }
 }

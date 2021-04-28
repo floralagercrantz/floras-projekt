@@ -28,6 +28,13 @@ h2 {
   grid-row: 6/7;
   justify-content: center;
 }
+h3 {
+
+}
+h4 {
+  grid-column: 2/9;
+  grid-row: 8/9;
+}
 .btn1 {
   grid-column: 4/7;
   grid-row: 4/5;
