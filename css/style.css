@@ -47,6 +47,7 @@ font-family: courier,serif;
 h2 { /* Om sidan*/
   font-family: courier,serif;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 h3 {
@@ -62,6 +63,7 @@ h4 {/*FAQ*/
 article p {/* stylar texten under h2*/
   text-align: center;
   font-family: courier, serif;
+  margin-top: 5px;
 }
 
 .background-img1{/* detta var jobbigt o fixa, rör ej lol */
@@ -82,6 +84,40 @@ button {/* stylar button och btn1 separat för ksk ska ha en till knapp, vem vet
   transition-duration: 1s;
   padding: 10px;
 }
+button span {
+  color: rgba(153, 153, 153, 0);
+}
+
+/*beskriver hur knappen ser ut, färg o form*/
+.btn1 {
+  background-color: inherit;
+  color:rgb(185, 235, 142, 0);
+  border-top: 1px dotted rgba(219, 228, 207, 0.66);
+  border-bottom: 1px dotted rgba(219, 228, 207, 0.06);
+  border-radius: 90%;
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  padding: 3px;
+  margin-top: 150px;
+/*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt... nepp absolut inte,har 1000 saker o göra
+box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
+}
+
+/*ändrar på knappen vid hover, wow*/
+.btn1:hover {
+  background-color: rgba(165, 187, 145, 0.42);
+  /*background-image: linear-gradient(rgba(165, 187, 145, 0.1),rgba(165, 187, 145, 0.7));*/
+  color: Black;
+  border: none;
+
+}
+
+/* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
+button:after {
+  content: ' \21D3';
+}
+
 
 figcaption {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
   color: rgb(214, 235, 162);
@@ -91,31 +127,6 @@ figcaption {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
   z-index: 2;
   padding: 50px;
   font-family: courier, serif;
-
-}
-/*beskriver hur knappen ser ut, färg o form*/
-.btn1 {
-  background-color: inherit;
-color:rgb(185, 235, 142, 10%);
-border: 3px solid rgba(219, 228, 207, 0.66);
-border-radius: 90%;
-  position: relative;
-  z-index: 2;
-  height: 65px;
-  padding: 3px;
-/*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt... nepp absolut inte,har 1000 saker o göra
-box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
-}
-/*ändrar på knappen vid hover, wow*/
-.btn1:hover {
-  background-color: rgba(165, 187, 145, 0.42);
-  color: Black;
-  border: none;
-}
-
-/* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
-button:after {
-  content: ' \21D3';
 }
 
 aside { /* om mig texten, gärna på sidan som js popout men får se hur det blir*/
@@ -126,6 +137,10 @@ aside { /* om mig texten, gärna på sidan som js popout men får se hur det bli
   border: thick dotted black;
   margin-right: 20px;
 
+}
+aside p {
+  padding:10px;
+  margin:10px;
 }
 
 footer {/*ja säger väl sig självt, en footer*/
