@@ -35,6 +35,10 @@ nav a:hover {/*vid hover på items i menyn */
   background-color:rgb(246, 245, 237);
   color: black;
 }
+#current {
+  text-transform: uppercase;
+  text-decoration: overline;
+}
 
 h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
 color:black;
@@ -112,9 +116,9 @@ box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 
 }
 
-/* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
+
 .btn1:after {
-  content: ' \21D3';
+  content: ' \21D3'; /* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
 }
 
 
@@ -132,7 +136,7 @@ aside { /* om mig texten, gärna på sidan som js popout men får se hur det bli
   max-height: 500px;
   text-align: center;
   border: thick dotted black;
-  margin-right: 20px;
+  margin-right: 30px;
 
 }
 aside p {
@@ -143,10 +147,10 @@ aside p {
 footer {/*ja säger väl sig självt, en footer*/
   background-color: rgb(214, 236, 192, 0.3);
 
-
 }
 section {
 }
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -173,7 +177,17 @@ section {
   display: none;
   overflow: hidden;
 }
+.accordion:after {
+  content: '\02795'; /* plustecken läggs till till höger */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
 
+.active:after {
+  content: "\2796"; /* lägg till minustecken efter klick */
+}
 
 
 
@@ -184,5 +198,12 @@ section {
   }
   .btn1 {
     display:none;
+  }
+  aside {
+    margin: 0px;
+    max-height: 700px;
+  }
+  article p {
+    margin-bottom: 55px;
   }
 }

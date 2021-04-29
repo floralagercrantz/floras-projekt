@@ -37,12 +37,17 @@ nav a:hover {/*vid hover på items i menyn */
   background-color:rgb(246, 245, 237);
   color: black;
 }
+#current {
+  text-transform: uppercase;
+  text-decoration: overline;
+}
 h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
 color:black;
 z-index: 3;
 position: relative;
 font-family: courier,serif;
 }
+
 
 
 footer {/*ja säger väl sig självt, en footer*/

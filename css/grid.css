@@ -31,10 +31,7 @@ h2 {
 h3 {
 
 }
-h4 {
-  grid-column: 2/9;
-  grid-row: 8/9;
-}
+
 .btn1 {
   grid-column: 3/8;
   grid-row: 4/5;
@@ -56,23 +53,48 @@ figcaption {
   align-self:center;
 }
 
-article {
+article {/* texten under h2*/
   grid-column: 2/7;
   grid-row: 7/8;
 }
 
 
 aside {
-  grid-column: 8/10;
+  grid-column: 8 /10;
   grid-row: 6/8;
 }
 section {
   grid-column: 2 / 9;
-  grid-row: 9 / 10;
+  grid-row: 8 / 10;
 }
 
 
 footer {
   grid-column: 1/-1;
   grid-row: 10/11;
+}
+
+@media only screen and (max-width: 800px){/*media query 800px, tyckte det var lämpligt */
+  figcaption {
+
+  }
+  .btn1 {
+
+  }
+  h2 {
+    grid-column: 2 / 9;
+  }
+  article {
+    grid-column: 2 / 9;
+  }
+  aside {
+    grid-column: 2 / 9;
+    grid-row: 8 / 9;
+  }
+  section {
+    grid-column: 2 / 9;
+    grid-row: 9 / 10;
+  }
+
+
 }

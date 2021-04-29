@@ -4,18 +4,25 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px ;
+  grid-auto-rows: 75px;
   grid-auto-flow: dense;
+  width: 100%;
+  height:auto;
 }
 
-/*div img {
+img {
   height: 100%;
-  width: 100%;
+  width: auto;
   object-fit: cover;
-  max-height: 400px;
+
 }
-*/
+
 div {
-  grid-column: 4/-1;
-  grid-row: 1/2
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
