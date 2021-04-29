@@ -94,7 +94,9 @@ button {/* stylar button och btn1 separat för ksk ska ha en till knapp, vem vet
   display: inline-block;
   font-size: 60px;
   margin: 25px;
+  margin-bottom: 35px;
   transition-duration: 1s;
+
 /*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt... nepp absolut inte,har 1000 saker o göra
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
