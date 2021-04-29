@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: courier, serif;
 }/* styling för allt på sidan*/
 
 /*flexbox för nav-baren, fancy*/
@@ -13,7 +14,7 @@
   align-items: center;
 
 }
-/*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen*/
+/*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen, alltså transition:top*/
 nav {
 transition: top 1s;
 background-color: rgb(107, 134, 80, 15%);
