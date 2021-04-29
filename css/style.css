@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: courier, serif;
 }/* styling för allt på sidan*/
 
 /*flexbox för nav-baren, fancy*/
@@ -18,7 +19,7 @@ transition: top 1s;
 background-color: rgb(107, 134, 80, 15%);
 height: 100px;
 z-index: 2;
-font-family: courier ;
+
 
 }
 /* */
@@ -41,11 +42,10 @@ h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
 color:black;
 z-index: 3;
 position: relative;
-font-family: courier,serif;
 }
 
 h2 { /* Om sidan*/
-  font-family: courier,serif;
+
   text-align: center;
   margin-bottom: 0px;
 }
@@ -55,14 +55,12 @@ h3 {
 }
 
 h4 {/*FAQ*/
-  font-family: courier,serif;
   text-align: center;
 
 }
 
 article p {/* stylar texten under h2*/
   text-align: center;
-  font-family: courier, serif;
   margin-top: 5px;
 }
 
@@ -73,19 +71,11 @@ position: relative;
 
 }
 
-button {/* stylar button och btn1 separat för ksk ska ha en till knapp, vem vet*/
-  border: none;
-  color: inherit;
-  padding: 20px;
-  text-align: center;
-  display: inline-block;
-  font-size: 60px;
-  margin: 25px;
-  transition-duration: 1s;
-  padding: 10px;
+button {/* stylar button och btn1 separat för ksk ska ha en till knapp, vem vet, update: japp fick nu en ny knapp så fick ta bort all styling på denna, wiho...*/
+
 }
-button span {
-  color: rgba(153, 153, 153, 0);
+.btn1 span {
+  display: none;
 }
 
 /*beskriver hur knappen ser ut, färg o form*/
@@ -99,7 +89,12 @@ button span {
   z-index: 2;
   height: 70px;
   padding: 3px;
-  margin-top: 150px;
+  color: inherit;
+  text-align: center;
+  display: inline-block;
+  font-size: 60px;
+  margin: 25px;
+  transition-duration: 1s;
 /*vill gärna ha en shadow på knappen så det blir en sorts glow-effekt, men venne om det är prio 1 riktigt... nepp absolut inte,har 1000 saker o göra
 box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
@@ -114,7 +109,7 @@ box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
 
 /* lägger till pil-icon efter text, detta kan nog göras på bättre sätt, men det funkar iaf!*/
-button:after {
+.btn1:after {
   content: ' \21D3';
 }
 
@@ -126,14 +121,12 @@ figcaption {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
   position: relative;
   z-index: 2;
   padding: 50px;
-  font-family: courier, serif;
 }
 
 aside { /* om mig texten, gärna på sidan som js popout men får se hur det blir*/
   overflow: scroll;
   max-height: 500px;
   text-align: center;
-  font-family: courier, serif;
   border: thick dotted black;
   margin-right: 20px;
 
@@ -145,9 +138,38 @@ aside p {
 
 footer {/*ja säger väl sig självt, en footer*/
   background-color: rgb(214, 236, 192, 0.3);
-  font-family: courier, serif;
+
 
 }
+section {
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 
 
 

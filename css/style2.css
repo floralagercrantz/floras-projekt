@@ -1,0 +1,51 @@
+
+
+* {
+  box-sizing: border-box;
+}/* styling för allt på sidan*/
+
+/*flexbox för nav-baren, fancy*/
+.flexbox {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: end;
+  align-items: center;
+
+}
+/*vill ha en navbar som döljs o visas när man scrollar upp o ner, men vet inte om det kommer funka med grid. KAn kommentera bort sen*/
+nav {
+transition: top 1s;
+background-color: rgb(107, 134, 80, 15%);
+height: 100px;
+z-index: 2;
+font-family: courier ;
+
+}
+nav a {
+  color: rgb(53, 71, 31);
+  font-weight: bold;
+  padding: 40.5px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 20%;
+  text-align: center;
+}
+
+nav a:hover {/*vid hover på items i menyn */
+  background-color:rgb(246, 245, 237);
+  color: black;
+}
+h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
+color:black;
+z-index: 3;
+position: relative;
+font-family: courier,serif;
+}
+
+
+footer {/*ja säger väl sig självt, en footer*/
+  background-color: rgb(214, 236, 192, 0.3);
+  font-family: courier, serif;
+
+}
