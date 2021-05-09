@@ -156,12 +156,14 @@ section {
 
 .galleryimg {
   width: 80%;/* för sida2, hur bilderna ska se ut nu när jag inte har container3 kvar. Måste göra dem spearat så de kan placeras i grid, sike det kommer bli fult att placera dem i grid så får bli enorma bilder iställlet*/
-  border-radius: 1%;
+  border-radius: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   border: 10px double rgb(57, 89, 17);
+  padding: 20px;
+  background-color: rgba(194, 208, 149, 0.43);
 }
 
 .topplänk {
