@@ -7,6 +7,11 @@
   width:100%;
 }
 
+.container3 {
+  grid-column: 2/9;
+  grid-row: 4/5;
+}
+
 header{
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -58,11 +63,11 @@ article {/* texten under h2*/
   grid-row: 7/8;
 }
 
-
 aside {
   grid-column: 8 /10;
   grid-row: 6/8;
 }
+
 section {
   grid-column: 2 / 9;
   grid-row: 8 / 10;
@@ -71,10 +76,13 @@ section {
 
 footer {
   grid-column: 1/-1;
-  grid-row: 10/11;
+  grid-row: 11/12;
 }
 
-@media only screen and (max-width: 800px){/*media query 800px, tyckte det var lämpligt */
+
+
+
+@media only screen and (max-width: 1000px){/*kom ihåg o ändra både grid och style mediaquery vid ändringar */
   figcaption {
 
   }

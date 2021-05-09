@@ -40,7 +40,7 @@ nav a:hover {/*vid hover på items i menyn */
   text-decoration: overline;
 }
 
-h1 {/* kanske ska ta bort detta, bidrar nt med mkt*/
+h1 {/* kanske ska ta bort denna rubrik, bidrar nt med mkt*/
 color:black;
 z-index: 3;
 position: relative;
@@ -151,6 +151,9 @@ footer {/*ja säger väl sig självt, en footer*/
 section {
 }
 
+.galleryimg {
+  width: 100%;
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -191,7 +194,7 @@ section {
 
 
 
-@media only screen and (max-width: 800px){/*media query för välkommen-bannern o första hover knappen, venne hur mkt pixlar en mobilskärm är, med detta behövde ändå fixas så kör det separat. */
+@media only screen and (max-width: 1000px){/*media query för välkommen-bannern o första hover knappen, venne hur mkt pixlar en mobilskärm är, med detta behövde ändå fixas så kör det separat. */
   figcaption {
     font-size: 15px;
     padding: 25px;
