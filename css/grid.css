@@ -87,7 +87,7 @@ footer {
 
   }
   .btn1 {
-
+    display: none;
   }
   h2 {
     grid-column: 2 / 9;
