@@ -78,10 +78,7 @@ section {
   grid-column: 1 / 10;
   grid-row: 10 / 11;
 }
-.banner img {
-  width:50%;
-  display: inline;
-}
+
 
 footer {
   grid-column: 1/-1;

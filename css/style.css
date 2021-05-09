@@ -154,6 +154,20 @@ footer {/*ja säger väl sig självt, en footer*/
 section {
 }
 
+.banner {
+  margin-top: 30px;
+}
+.banner img {
+  width:50%;
+  display: inline;
+    border: 3px solid;
+}
+
+.bildhöger { /*ser lite skumt ut men var det enda sättet jag lyckades få dem lika höjd.De är samma höjd i px men ngt blev skumt venne vad..*/
+  float: right;
+  height: 93.7%;
+}
+
 .galleryimg {
   width: 80%;/* för sida2, hur bilderna ska se ut nu när jag inte har container3 kvar. Måste göra dem spearat så de kan placeras i grid, sike det kommer bli fult att placera dem i grid så får bli enorma bilder iställlet*/
   border-radius: 10%;
