@@ -26,7 +26,7 @@ nav a {
   font-weight: bold;
   padding: 40.5px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   width: 20%;
   text-align: center;
 }
@@ -59,7 +59,9 @@ h3 {
 
 h4 {/*FAQ*/
   text-align: center;
-
+}
+h5 {
+  font-size: 20px;
 }
 
 article p {/* stylar texten under h2*/
@@ -153,7 +155,17 @@ section {
 }
 
 .galleryimg {
-  width: 100%;
+  width: 80%;/* för sida2, hur bilderna ska se ut nu när jag inte har container3 kvar. Måste göra dem spearat så de kan placeras i grid, sike det kommer bli fult att placera dem i grid så får bli enorma bilder iställlet*/
+  border-radius: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 10px double rgb(57, 89, 17);
+}
+
+.topplänk {
+  text-align: center;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
