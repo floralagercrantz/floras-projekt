@@ -67,6 +67,7 @@ h5 {
 article p {/* stylar texten under h2*/
   text-align: center;
   margin-top: 5px;
+  font-size: 18px;
 }
 
 .background-img1{/* detta var jobbigt o fixa, rör ej lol */
@@ -242,5 +243,17 @@ section {
   }
   nav a {
     font-size: 20px;
+  }
+  article p {
+    font-size:25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  section {
+    font-size: 22px;
+  }
+  section button {
+    font-size: 26px;
   }
 }
