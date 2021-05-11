@@ -41,10 +41,12 @@ nav a:hover {/*vid hover på items i menyn */
 }
 
 h1 {/* kanske ska ta bort denna rubrik, bidrar nt med mkt*/
-color:black;
+color:rgb(53, 71, 31);
 z-index: 3;
 position: relative;
-font-size: 32px;
+font-size: 52px;
+text-decoration: underline;
+margin-left: 25px;
 }
 
 h2 { /* Om sidan*/
