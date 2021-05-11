@@ -128,7 +128,7 @@ box-shadow: 2px 2px 2px rgb(209, 255, 185, 30%);*/
 }
 
 
-figcaption {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
+.welcome {/* VÄlkommen-bannern overlayad med min bakgrundsbild*/
   color: rgb(214, 235, 162);
   background-image: linear-gradient(to right, rgb(66, 75, 55, 0.8),rgb(66, 75, 55, 0));
   font-size: 30px;
@@ -226,7 +226,7 @@ section {
 
 
 @media only screen and (max-width: 1000px){/*media query för välkommen-bannern o första hover knappen, venne hur mkt pixlar en mobilskärm är, med detta behövde ändå fixas så kör det separat. */
-  figcaption {
+  .welcome {
     font-size: 20px;
     padding: 25px;
   }

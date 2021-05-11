@@ -48,13 +48,13 @@ h3 {
   grid-column:1/-1;
   grid-row:1/5;
   justify-self: center;
-  /*se kommentar under detta i figcaption*/
+  /*se kommentar under detta i .welcome*/
 }
 
-figcaption {
+.welcome {
   grid-column: 1/4;
   grid-row: 3/6;
-  /* testade justify-self för då sa olivia att de borde gå att se figcaption över min bagrundsbild, verkar inte funka tho, undrar vad jag gjort fel, update: fixat nu på ngt sätt!*/
+  /* testade justify-self för då sa olivia att de borde gå att se .welcome över min bagrundsbild, verkar inte funka tho, undrar vad jag gjort fel, update: fixat nu på ngt sätt!*/
   justify-self:left;
   align-self:center;
 }
@@ -93,9 +93,6 @@ main {
 
 
 @media only screen and (max-width: 1000px){/*kom ihåg o ändra både grid och style mediaquery vid ändringar */
-  figcaption {
-
-  }
   .btn1 {
     display: none;
   }
